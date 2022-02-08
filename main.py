@@ -97,7 +97,7 @@ getTicksLastFrame = t
 pygame.mixer.music.load(filename)
 pygame.mixer.music.play(0)
 
-# Run until the user asks to quit
+# Run until the user asks to quit.
 running = True
 while running:
 
@@ -115,7 +115,6 @@ while running:
         b.update(deltaTime, get_decibel(pygame.mixer.music.get_pos()/1000.0, b.freq))
         b.render(screen)
 
-    # Flip the display
     pygame.display.flip()
 
 pygame.quit()
